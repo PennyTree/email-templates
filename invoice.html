@@ -41,7 +41,7 @@
             background-color: #fff;
             margin: 0 auto;
             width: 100%;
-            max-width: 698px;
+            max-width: 700px;
             border-spacing: 0;
             font-family: sans-serif;
             color: #000000;
@@ -77,31 +77,46 @@
         }
         
         .two-column .column {
-            width: 100%;
+            width: 50%;
             max-width: 300px;
             display: inline-block;
             vertical-align: top;
         }
         
-        .two-columns {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            width: 100%;
+        .two-column .column-box {
+            width: 50%;
+            max-width: 120px;
+            display: inline-block;
+            vertical-align: top;
         }
         
-        .flex {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
+        .two-column .column2 {
+            width: 50%;
+            max-width: 50%;
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
         }
         
-        .flex-start {
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
+        .two-column .column3 {
+            width: 85px;
+            max-width: 100%;
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+        }
+        
+        .three-column {
+            text-align: center;
+            font-size: 0;
+            padding: 35px 0px 20px;
+        }
+        
+        .three-column .column {
             width: 100%;
+            max-width: 200px;
+            display: inline-block;
+            vertical-align: top;
         }
     </style>
 </head>
@@ -110,16 +125,20 @@
     <div class="wrapper">
         <table class="main" width="100%">
             <tr>
-                <td style="padding: 10px 50px;">
+                <td style="padding: 10px 20px;">
                     <table width="100%">
                         <tr>
-                            <td class="two-columns">
-                                <table width="100%">
-                                    <img src='https://res.cloudinary.com/teb/image/upload/v1667557686/pennytree_logo_uzuyor.png' alt="">
-                                </table>
-                                <table class="">
+                            <td class="two-column">
+                                <table class="column">
                                     <tr>
-                                        <td style="text-align: left;">
+                                        <td>
+                                            <img src='https://res.cloudinary.com/teb/image/upload/v1667557686/pennytree_logo_uzuyor.png' alt="">
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="column">
+                                    <tr>
+                                        <td style="text-align: right;">
                                             <p style="font-size: 16px; font-weight: 500;">Invoice #1</p>
                                             <p style="font-size: 15px; font-weight: 700;">Date: 15 - 09 -2022</p>
                                             <p style="font-size: 15px; font-weight: 400;">Due Date: 22 - 09 -2022</p>
@@ -132,7 +151,7 @@
                 </td>
             </tr>
             <tr>
-                <td class="flex">
+                <td align="center">
                     <table style="width: 80%; height: 148px; background-color: 
                     #F3F3F3; border-radius: 10px; margin-bottom:15px;">
                         <tr>
@@ -148,55 +167,151 @@
                 </td>
             </tr>
             <tr>
-                <td class="flex">
+                <td align="center">
                     <table style="width: 80%; height: 148px; background-color: 
                     #F3F3F3; border-radius: 10px; margin-bottom:15px;">
                         <tr>
-                            <td class="two-columns" style="padding: 5px 20px 0px; border-bottom: 1px solid #979A9F; width: 90%;">
-                                <p style="font-size:14px; font-weight: 400;">DESCRIPTION</p>
-                                <p style="font-size:14px; font-weight: 400;">RATE</p>
-                                <P style="font-size:14px; font-weight: 400;">QTY</P>
-                                <P style="font-size:14px; font-weight: 400;">SUBTOTAL</P>
+                            <td style="padding: 5px 20px 0px; border-bottom: 1px solid #979A9F; width: 90%;" class="two-column">
+                                <table class="column-box">
+                                    <tr>
+                                        <td>
+                                            <p style="font-size:14px; font-weight: 400;">DESCRIPTION</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="column-box">
+                                    <tr>
+                                        <td>
+                                            <p style="font-size:14px; font-weight: 400;">RATE</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="column-box">
+                                    <tr>
+                                        <td>
+                                            <p style="font-size:14px; font-weight: 400;">QTY</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="column-box">
+                                    <tr>
+                                        <td>
+                                            <p style="font-size:14px; font-weight: 400;">SUBTOTAL</p>
+                                        </td>
+                                    </tr>
+                                </table>
                             </td>
                         </tr>
                         <tr>
-                            <td class="two-columns " style="padding: 5px 20px 0px; text-align:left; width: 90%;">
-                                <p style="max-width: 88px; font-size:14px; font-weight: 400; ">RPA Services 1x3 months</p>
-                                <p style="font-size:14px; font-weight: 400; ">N3,000</p>
-                                <P style="font-size:14px; font-weight: 400; ">3</P>
-                                <P style="font-size:14px; font-weight: 400; ">N9,000</P>
+                            <td class="two-column">
+                                <table class="column-box">
+                                    <tr>
+                                        <td>
+                                            <p style="max-width: 88px; font-size:14px; font-weight: 400; ">RPA Services 1x3 months</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="column-box">
+                                    <tr>
+                                        <td>
+                                            <p style="max-width: 88px; font-size:14px; font-weight: 400; ">N3,000</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="column-box">
+                                    <tr>
+                                        <td>
+                                            <p style="max-width: 88px; font-size:14px; font-weight: 400; ">3</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="column-box">
+                                    <tr>
+                                        <td>
+                                            <p style="max-width: 88px; font-size:14px; font-weight: 400; ">N9,000</p>
+                                        </td>
+                                    </tr>
+                                </table>
                             </td>
                         </tr>
                         <tr>
-                            <td class="two-columns " style="padding: 5px 20px 0px; text-align:left; width: 90%;">
-                                <p style="max-width: 88px; font-size:14px; font-weight: 400; ">Server Cost</p>
-                                <p style="font-size:14px; font-weight: 400; ">N18,000</p>
-                                <P style="font-size:14px; font-weight: 400; ">2</P>
-                                <P style="font-size:14px; font-weight: 400; ">N36,000</P>
+                            <td class="two-column">
+                                <table class="column-box">
+                                    <tr>
+                                        <td>
+                                            <p style="max-width: 88px; font-size:14px; font-weight: 400; ">Server Cost</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="column-box">
+                                    <tr>
+                                        <td>
+                                            <p style="max-width: 88px; font-size:14px; font-weight: 400; ">N18,000</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="column-box">
+                                    <tr>
+                                        <td>
+                                            <p style="max-width: 88px; font-size:14px; font-weight: 400; ">2</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="column-box">
+                                    <tr>
+                                        <td>
+                                            <p style="max-width: 88px; font-size:14px; font-weight: 400; ">N36,000</p>
+                                        </td>
+                                    </tr>
+                                </table>
                             </td>
                         </tr>
                     </table>
                 </td>
             </tr>
             <tr>
-                <td class="flex ">
+                <td align="center">
                     <table style="width: 80%; height: 148px; background-color: #F3F3F3; border-radius: 10px; margin-bottom:15px; ">
                         <tr>
-                            <td class="two-columns ">
-                                <table>
+                            <td style="padding: 5px 25px 0px;  width: 100%;" class="two-column">
+                                <table class="column2">
                                     <tr>
-                                        <td style="padding: 5px 20px 0px; ">
+                                        <td>
                                             <p style="font-size:16px; font-weight:400; color:rgba(0, 0, 0, 1); ">Subtotal</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="column2">
+                                    <tr>
+                                        <td>
+                                            <p style="font-size:16px; font-weight:400; color:rgba(0, 0, 0, 1); ">N45,000</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="column2">
+                                    <tr>
+                                        <td>
                                             <p style="font-size:16px; font-weight:500; color:rgba(0, 0, 0, 1); ">Tax <span style="color: #fff; background-color:rgba(59, 114, 237, 1); padding:2px 5px; ">12%</span></p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="column2">
+                                    <tr>
+                                        <td>
+                                            <p style="font-size:16px; font-weight:500; color:rgba(0, 0, 0, 1); ">N5,400</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="column2">
+                                    <tr>
+                                        <td>
                                             <p style="font-size:16px; font-weight:700; color:rgba(216, 93, 23, 1); ">GRAND TOTAL</p>
                                         </td>
                                     </tr>
                                 </table>
-                                <table>
+                                <table class="column2">
                                     <tr>
-                                        <td style="padding: 5px 20px 0px; ">
-                                            <p style="font-size:16px; font-weight:400; color:rgba(0, 0, 0, 1); ">N45,000</p>
-                                            <p style="font-size:16px; font-weight:500; color:rgba(0, 0, 0, 1); ">N5,400</p>
+                                        <td>
                                             <p style="font-size:16px; font-weight:700; color:rgba(0, 0, 0, 1); ">N50,400</p>
                                         </td>
                                     </tr>
@@ -207,7 +322,7 @@
                 </td>
             </tr>
             <tr>
-                <td class="flex ">
+                <td align="center">
                     <table style="width: 80%; height: 83px; background-color: #F3F3F3; border-radius: 10px; margin-bottom:15px; ">
                         <tr>
                             <td style="text-align:left; padding: 1px 20px 15px ">
@@ -219,7 +334,7 @@
                 </td>
             </tr>
             <tr>
-                <td class="flex ">
+                <td align="center">
                     <table style="width: 80%; height: 93px; background-color: #F3F3F3; border-radius: 10px; margin-bottom:15px; ">
                         <tr>
                             <td style="text-align:left; padding: 1px 20px 15px ">
@@ -230,12 +345,24 @@
                 </td>
             </tr>
             <tr>
-                <td class="flex " style="margin-top: 20px; ">
+                <td align="center">
                     <table width="100% " style="text-align:center; ">
                         <tr>
-                            <td class="flex-start ">
-                                <span style="padding-top: 5px; ">Powered by</span>
-                                <img src="https://res.cloudinary.com/teb/image/upload/v1667557686/pennytree_green_sjvjnb.png " alt=" ">
+                            <td class="two-column" style="text-align:center; ">
+                                <table class="column3">
+                                    <tr>
+                                        <td>
+                                            <p style="color: #000000; font-size: 14px; font-weight: 700">Powered by</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="column3">
+                                    <tr>
+                                        <td>
+                                            <img src="https://res.cloudinary.com/teb/image/upload/v1667557686/pennytree_green_sjvjnb.png " alt=" ">
+                                        </td>
+                                    </tr>
+                                </table>
                             </td>
                         </tr>
                     </table>
